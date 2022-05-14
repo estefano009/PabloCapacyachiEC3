@@ -31,7 +31,7 @@ public class HospitalController {
 		return new ResponseEntity<List<HospitalResponseDto>>(service.listarHospital(),HttpStatus.OK);
     }
 
-    @PostMapping
+    @PostMapping(path = "/guardar")
     public ResponseEntity<Void> guardar(@RequestBody HospitalRequestDto hospitalDto){
 		service.guardarHospital(hospitalDto);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);

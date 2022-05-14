@@ -28,7 +28,7 @@ public class Cliente {
 	private String celular;
 	
 	@OneToOne
-	@JoinColumn(name = "id_Usuario", unique = true)
+	@JoinColumn(name = "id_usuario", unique = true)
     private UsuarioCliente usuariocliente;
 	
 	
